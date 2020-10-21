@@ -13,18 +13,41 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel='stylesheet' href='./css/styles.css' />
 </head>
 <body>
 
-  IP Address Tracker
+  <h1>IP Address Tracker</h1>
 
-  Search for any IP address or domain
+  <div class='search'>
+    <input type='text' placeholder="Search for any IP address or domain" />
+    <button type='submit'>>></button>
+  </div>
+  
 
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
+  <div class='card'>
+    <div>
+      <h3>IP Address</h3>
+      <p>...</p>
+    </div>
+
+    <div>
+      <h3>Location</h3>
+      <p>...</p>
+    </div>
+
+    <div class='hi'>
+      <h3>Timezone</h3>
+      <p>UTC <!-- add offset value dynamically using the API --></p>
+    </div>
+    
+    <div>
+      <h3>ISP</h3>
+      <p>...</p>
+    </div>
+  </div>
+
+
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
