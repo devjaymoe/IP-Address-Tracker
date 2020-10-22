@@ -19,29 +19,29 @@
     <h1>IP Address Tracker</h1>
 
     <div class='search'>
-      <input type='text' placeholder="Search for any IP address or domain" />
-      <button type='submit'><img src='./images/icon-arrow.svg' alt='arrow'></button>
+      <input id='searchInput' type='text' placeholder="Search for any IP address or domain" />
+      <button id='submitButton' type='submit'><img src='./images/icon-arrow.svg' alt='arrow'></button>
     </div>
   
     <div class='card'>
       <div>
         <h3>IP Address</h3>
-        <p>192.212.174.101</p>
+        <p class='ipAddr'>192.212.174.101</p>
       </div>
   
       <div>
         <h3>Location</h3>
-        <p>Brooklyn, NY 10001</p>
+        <p class='location'>Brooklyn, NY 10001</p>
       </div>
   
       <div>
         <h3>Timezone</h3>
-        <p>UTC - 05:00 <!-- add offset value dynamically using the API --></p>
+        <p class='time'>UTC - 05:00 <!-- add offset value dynamically using the API --></p>
       </div>
       
       <div>
         <h3>ISP</h3>
-        <p>SpaceX Starlink</p>
+        <p class='isp'>SpaceX Starlink</p>
       </div>
     </div>
   </div>
@@ -49,6 +49,7 @@
   <div id="mapid"></div>
 
   <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>

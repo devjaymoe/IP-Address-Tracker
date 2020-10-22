@@ -189,7 +189,6 @@ button {
     border: none;
     padding: 2.5%;
     outline: none;
-    transition-duration: 0.3;
     transition: all;
 }
 
@@ -226,7 +225,7 @@ button:active {
 }
 
 #mapid {
-    height: 70vh;
+    height: 62.9vh;
     position: relative;
     z-index: -1;
 }
