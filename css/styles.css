@@ -208,6 +208,7 @@ button:active {
     -webkit-box-shadow: 2px 2px 5px 0px rgba(163, 163, 163, 1);
     -moz-box-shadow: 2px 2px 5px 0px rgba(163, 163, 163, 1);
     box-shadow: 2px 2px 5px 0px rgba(163, 163, 163, 1);
+    z-index: 1;
 }
 
 .card div {
@@ -227,5 +228,5 @@ button:active {
 #mapid {
     height: 62.9vh;
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
