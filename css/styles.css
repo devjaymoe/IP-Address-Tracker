@@ -138,6 +138,7 @@ p {
 }
 
 h3 {
+    font-size: 0.8rem;
     color: grey;
 }
 
@@ -145,27 +146,87 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 30vh;
+    height: 35vh;
     background-image: url("../images/pattern-bg.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
+    padding-top: 1%;
 }
 
 .headContainer h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: white;
 }
 
+.headContainer div,
+.headContainer h1 {
+    margin: 1% 0;
+}
+
+.search {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    outline: none;
+    width: 70%;
+    padding: 2.5%;
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+input:hover,
+button:hover {
+    cursor: pointer;
+}
+
+button {
+    background-color: black;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    padding: 2.5%;
+    outline: none;
+    transition-duration: 0.3;
+    transition: all;
+}
+
+button:active {
+    background-color: grey;
+    transition: all;
+    transition-duration: 0.2s;
+}
 .headContainer .card {
     display: flex;
     justify-content: space-evenly;
     background-color: white;
     border-radius: 10px;
     width: 75%;
-    height: 15vh;
+    height: 18vh;
+    margin-top: 2.8%;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(163, 163, 163, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(163, 163, 163, 1);
+    box-shadow: 2px 2px 5px 0px rgba(163, 163, 163, 1);
+}
+
+.card div {
+    border-right: 1px solid grey;
+    width: 20%;
+    margin: 2%;
+}
+
+.card div p {
+    margin-top: 5%;
+}
+
+.card div:last-of-type {
+    border: none;
 }
 
 #mapid {
     height: 70vh;
+    position: relative;
+    z-index: -1;
 }
